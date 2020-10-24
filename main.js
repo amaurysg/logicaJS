@@ -285,9 +285,9 @@ iterar("Hola") */
 
 
 
-/* Podria usar  un metodo contains, el cual puede buscar una cadena dentro de otra. 
+/* Podria usar  un metodo contains, el cual puede buscar una cadena dentro de otra.
 Tambien se podria usar una expresion regular con el valor de la subcadena,
-para buscarlo desde la cadena mayor 
+para buscarlo desde la cadena mayor
 
 sino recorrer toda la cadena e ir buscando valor a valor, ejemplo un codigo que me busque el numero de palabras comunes y el numero de las mismas.  */
 
@@ -323,12 +323,12 @@ contarTextoRepetido(parrafo, palabraBuscar);
   }
 
 }
- */
-/* const nodo1 = new Punto(5000, 5100)
-const nodo2 = new Punto(6000, 6800) //mayor latencia
-const nodo3 = new Punto(7000, 8500) //1400 */
 
-/* const p = [nodo1, nodo2, nodo3]
+const nodo1 = new Punto(5000, 5100)
+const nodo2 = new Punto(6000, 6800) //mayor latencia
+const nodo3 = new Punto(7000, 9000) //1400
+
+const p = [nodo1, nodo2, nodo3]
 
 let latenciaMaxima = 0;
 for (let i = 0; i < p.length; i++) {
@@ -358,7 +358,7 @@ console.log(a) */
 }
 console.log('object', multiply(2, 2)) */
 
-var num = 0
+/* var num = 0
 var numPares = 0
 var sumPares = 0
 var sumImpares = 0
@@ -371,7 +371,7 @@ for (i = 1; i <= 100; i++) {
   } else {
     sumImpares += i
   }
-}
+} */
 /* console.log("Suma Pares:", sumPares)
 console.log("Suma Impares:", sumImpares) */
 
@@ -428,25 +428,27 @@ function clearItem(nodo, item) {
 clearItem(nodo, 2)
 console.log(nodo) */
 
+//SOLUCION UNO///
+/* var nodo = [1, 2, 3, 4, 5]
 
-var nodo = [1, 2, 3, 4, 5]
 console.log("Nodo principal", nodo)
 
 var clearItem = (nodo, item) => {
+
   var i = nodo.indexOf(item);
   i !== -1 && nodo.splice(i, 1);
-  for (i = i; i <= nodo.length - 1; i++) {
+  var newArray = []
+  for (i = i; i < nodo.length; i++) {
+    nodo[i] = nodo[i] - 1
     var indices = nodo[i] - 1
+    newArray.push(indices)
 
-
-    console.log("Nuevo indice", indices)
   }
-
-
+  console.log('object', newArray)
 };
-clearItem(nodo, 2)
-console.log("Nodo con un item eliminado", nodo)
-
+clearItem(nodo, 1)
+console.log(`Hecho`, nodo)
+ */
 
 /* var valor = nodo[parseInt(prompt("Dame valor"))]
 console.log("Nodo", nodo)
@@ -458,4 +460,55 @@ console.log("Valor", valor) */
 console.log(nodo) */
 
 
+/*
+var nodo = [1, 2, 3, 4, 5]
+var item = nodo.indexOf(4)
+console.log(item)
+var clear = (array, item, cantidad) => {
+  nodo.splice(item, cantidad)
+  for (i = 2; i <= nodo.length - 1; i++) {
+    nodo[i] - 1
+    console.log(i)
 
+
+
+  }
+}
+
+
+
+clear(nodo, 2, 1)
+console.log(nodo) */
+
+
+/*
+array = [];
+
+var nodo = 2
+var nodo = 3
+var nodo = 4
+array.push(nodo)
+console.log(array)  */
+
+
+/* array = [1, 2, 3, 4]
+
+console.log(array)
+
+function clear(item, cantidad) {
+  var item = array.indexOf(1)
+  array.splice(item, 1) //Valor que doy
+
+  newArray = array
+  console.log(newArray)
+
+  newArray.forEach(i => {
+    for (i = 0; i < newArray.length; i++) {
+      newArray[i] = newArray[i] - 1
+    }
+    console.log(newArray)
+    return newArray
+  });
+}
+clear()
+ */
