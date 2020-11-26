@@ -306,8 +306,8 @@ function contarTextoRepetido(parrafo, palabraBuscar) {
 }
 contarTextoRepetido(parrafo, palabraBuscar);
  */
-
-/* class Punto {
+/*
+class Punto {
   latitud = 12544;
   longitud = 44555;
   tiempoGeneracion = 0; // En segundos SE INSTANETE EN QUE GENERÓ PUNTO GEOGRAFICO

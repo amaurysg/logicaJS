@@ -1,4 +1,4 @@
-/* let pizzas = [
+let pizzas = [
   {
     id: 1,
     name: "hawaina",
@@ -28,12 +28,12 @@
 
   },
 
-] */
+]
 
 
 
 //1. Retornar las pizzas cuyo valor mediano sea mayor o igual a 20
-/* let pizzasMedium = (pizza) => {
+let pizzasMedium = (pizza) => {
   return pizzas.filter((pizza) => {
     if (pizza.prices.medium <= 25) {
       return true
@@ -43,7 +43,7 @@
     }
   })
 }
-console.log(pizzasMedium()) */
+console.log(pizzasMedium())
 
 /* str = prompt("Dame pizza").toLowerCase()
 
